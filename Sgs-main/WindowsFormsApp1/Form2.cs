@@ -35,12 +35,12 @@ namespace WindowsFormsApp1
 
             for (int i = 0; i < 3; i++)
             {
-                string programPath = "C:\\Users\\1\\Desktop\\TarEmu1\\TarEmu1\\TarEmu.exe";
+                string programPath = @"C:\\Users\\1\\Desktop\\TarEmu1\\TarEmu1\\TarEmu.exe";
                 string programArgument = "";
                 // Запускаем приложение Блокнот
-                ProcessStartInfo = new ProcessStartInfo(programPath, programArgument);
-                Process = new Process();
-                Process.StartInfo = startinfo;
+                ProcessStartInfo startInfo = new ProcessStartInfo(programPath, programArgument);
+                Process process = new Process();
+                process.StartInfo = startInfo;
 
                 // Ждем 10 минуту
                 Thread.Sleep(600000);
@@ -53,9 +53,9 @@ namespace WindowsFormsApp1
 
                 // Закрываем приложение Блокнот
                 Process[] processes = Process.GetProcessesByName("notepad");
-                foreach (Process process in processes)
+                for (int i1 = 0; i1 < processes.Length; i1++)
                 {
-                    process.Kill();
+                    processes[i1].Kill();
                 }
 
                 // Ждем 5 секунд перед повторным запуском
