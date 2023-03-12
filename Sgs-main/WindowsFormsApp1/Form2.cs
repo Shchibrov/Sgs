@@ -4,6 +4,8 @@ using System.Drawing;
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
+using System.Windows.Automation;
+using System.IO.Ports;
 
 namespace WindowsFormsApp1
 {
@@ -35,24 +37,43 @@ namespace WindowsFormsApp1
 
             for (int i = 0; i < 3; i++)
             {
-                string programPath = @"C:\\Users\\1\\Desktop\\TarEmu1\\TarEmu1\\TarEmu.exe";
-                string programArgument = "";
-                // Запускаем приложение Блокнот
-                ProcessStartInfo startInfo = new ProcessStartInfo(programPath, programArgument);
-                Process process = new Process();
-                process.StartInfo = startInfo;
+                string tarEmuPath = @"D:\TarEmu\TarEmu.exe";
+                string args = @"=BINS_U.ini";
+                Process.Start(tarEmuPath, args);
 
-                // Ждем 10 минуту
-                Thread.Sleep(600000);
+                // Создаем новый объект SerialPort для работы с портом
+                SerialPort port = new SerialPort("COM1", 9600);
+
+                // Открываем порт
+                port.Open();
+
+                // Отправляем команду "on" для включения реле
+                port.WriteLine("on");
+
+                Thread.Sleep(6000); // Ждем, пока процесс загрузится
+
+                SendKeys.Send("{F9}"); // имитируем нажатие клавиши F9
+
+                Thread.Sleep(1000); // пауза перез нажатием F2
+
+                SendKeys.Send("{F2}");// имитируем нажатие клавиши F2
+
+                Thread.Sleep(600000); // запуск 10 минут
+                
+                SendKeys.Send("{F2}"); // отжатие кнопки записи 
 
                 // Делаем скриншот и сохраняем его в файл в папке для скриншотов
                 SendKeys.Send("{PRTSC}");
+
+                // Закрываем порт
+                port.Close();
+
                 Image screenshot = Clipboard.GetImage();
                 string filePath = Path.Combine(folderPath, "screenshot_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".png");
                 screenshot.Save(filePath, System.Drawing.Imaging.ImageFormat.Png);
 
-                // Закрываем приложение Блокнот
-                Process[] processes = Process.GetProcessesByName("notepad");
+                // Закрываем приложение Taremu
+                Process[] processes = Process.GetProcessesByName("TarEmu");
                 for (int i1 = 0; i1 < processes.Length; i1++)
                 {
                     processes[i1].Kill();
