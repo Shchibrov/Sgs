@@ -16,3 +16,21 @@ C:\Users\1\Desktop\Sgs-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.mani
 C:\Users\1\Desktop\Sgs-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.application
 C:\Users\1\Desktop\Sgs-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\1\Desktop\Sgs-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.manifest
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.application
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\obj\Debug\Sgs.csproj.AssemblyReference.cache
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\obj\Debug\Sgs.csproj.SuggestedBindingRedirects.cache
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\obj\Debug\Interop.ACTIVEXLib.dll
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\obj\Debug\Sgs.csproj.ResolveComReference.cache
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\obj\Debug\Sgs.csproj.GenerateResource.cache
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\obj\Debug\Sgs.csproj.CoreCompileInputs.cache
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.manifest
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.application
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Schib\OneDrive\Рабочий стол\Sgs-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
